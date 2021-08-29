@@ -1,4 +1,5 @@
 const dateofBirth = document.querySelector("#date-of-birth");
+console.log(dateofBirth);
 const luckyNumber  = document.querySelector("#lucky-number");
 const CheckButton = document.querySelector("#check-number");
 const displayMessage = document.querySelector("output-container");
