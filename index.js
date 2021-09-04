@@ -1,5 +1,5 @@
 const dateofBirth = document.querySelector("#date-of-birth");
-console.log(dateofBirth);
+
 const luckyNumber  = document.querySelector("#lucky-number");
 const CheckButton = document.querySelector("#check-number");
 const displayMessage = document.querySelector("output-container");
@@ -21,13 +21,14 @@ const checkIsNumberLucky = (sumOfDate ,numbertToCheck)=>{
     };
 
 
-const showMessage = (message)=>{
-displayMessage.innerText = message;
-}
+const showMessage = (msg)=>{
+displayMessage.innerText = msg;
+};
 
 
 CheckButton.addEventListener("click" , ()=>{
     const date = dateofBirth.value;
+    
     const numbertToCheck = luckyNumber.value;
     if(date&& numbertToCheck){
         const sumOfDate = calculatedSum(date);
