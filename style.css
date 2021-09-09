@@ -1,8 +1,38 @@
 :root{
-    --background-color: #E5E7EB;
+    --primary-color: #111827;
+    --secondary-color: 
+    #D1D5DB; 
+    
+
     
 }
-html {
-    background-color: var(--background-color);
-
+body{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+h1{
+    text-align: center;
+    margin:2rem;
+}
+.container{
+    width: 300px;
+    margin: auto;
+}
+input,label{
+    display: block;
+}
+input{
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+#check-button{
+    display: block;
+    margin-top: 2rem;
+    margin: auto;
+    background: transparent;
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    border-width: medium;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
 }
